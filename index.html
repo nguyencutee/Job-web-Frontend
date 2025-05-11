@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .title {
+      color: hsl(180, 29%, 50%);
+    }
+
+    .highlight .card {
+      border-radius: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .highlight .New {
+      background-color: hsl(180, 29%, 50%);
+      color: white;
+    }
+
+    .highlight .Featured {
+      background-color: rgb(82, 81, 81);
+      color: white;
+    }
+
+    .tag .card {
+      padding: 5px;
+      background-color: #f0fafa;
+      color: hsl(180, 29%, 50%);
+    }
+
+    .headerbg {
+      background-color: hsl(180, 29%, 50%);
+    }
+
+    .list {
+      background-color: #effafa;
+      padding: 80px;
+    }
+
+    .card.hihi::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 5px;
+      height: 100%;
+      background-color: hsl(180, 29%, 50%);
+      border-radius: 8px 0 0 8px;
+    }
+
+    .card.hihi {
+      box-shadow: 0 10px 15px rgba(0, 128, 128, 0.15);
+    }
+
+    .card.haha {
+      box-shadow: 0 10px 15px rgba(0, 128, 128, 0.15);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="general">
+    <div class="headerbg">
+      <img src="images/bg-header-desktop.svg" class="w-100" alt="Header background">
+    </div>
+    <div class="list">
+      <div class="photosnap">
+        <div class="card hihi d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/photosnap.svg" alt="Photosnap logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">Photosnap</h1>
+              </div>
+              <div class="highlight align-items-center flex-row d-flex gap-2">
+                <div class="New card fw-bold">NEW!</div>
+                <div class="Featured card fw-bold">FEATURED</div>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Senior Frontend Developer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">1d ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Full Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">USA only</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Frontend</div>
+                <div class="card fw-bold">Senior</div>
+                <div class="card fw-bold">HTML</div>
+                <div class="card fw-bold">CSS</div>
+                <div class="card fw-bold">Java Script</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Manage pt-2">
+        <div class="card hihi d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/manage.svg" alt="fullstackdeveloper logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">Manage</h1>
+              </div>
+              <div class="highlight align-items-center flex-row d-flex gap-2">
+                <div class="New card fw-bold">NEW!</div>
+                <div class="Featured card fw-bold">FEATURED</div>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Fullstack Develope</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">1d ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Part Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">Remote</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Fullstack</div>
+                <div class="card fw-bold">Midweight</div>
+                <div class="card fw-bold">Python</div>
+                <div class="card fw-bold">React</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Account pt-2">
+        <div class="card haha d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/account.svg" alt="Account logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">Account</h1>
+              </div>
+              <div class="highlight align-items-center flex-row d-flex gap-2">
+                <div class="New card fw-bold">NEW!</div>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Junior Frontend Developer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">2d ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Part Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">USA only</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Frontend</div>
+                <div class="card fw-bold">Junior</div>
+                <div class="card fw-bold">React</div>
+                <div class="card fw-bold">Sass</div>
+                <div class="card fw-bold">JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Myhome pt-2">
+        <div class="card haha d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/myhome.svg" alt="Myhome logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">MyHome</h1>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Junior Frontend Developer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">5d ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Contract</div>
+                  <div class=".">•</div>
+                  <div class="Location">USA only</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Frontend</div>
+                <div class="card fw-bold">Junior</div>
+                <div class="card fw-bold">CSS</div>
+                <div class="card fw-bold">JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="LoopStudios pt-2">
+        <div class="card haha d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/loop-studios.svg" alt="LoopStudios logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">Loop Studios</h1>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Software Engineer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">1w ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Full Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">Worldwide</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Fullstack</div>
+                <div class="card fw-bold">Midweight</div>
+                <div class="card fw-bold">JavaScript</div>
+                <div class="card fw-bold">Sass</div>
+                <div class="card fw-bold">Ruby</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FaceIt pt-2">
+        <div class="card haha d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/faceit.svg" alt="FaceIt logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">FaceIt</h1>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Junior Backend Developer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">2w ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Full Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">UK only</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Backend</div>
+                <div class="card fw-bold">Junior</div>
+                <div class="card fw-bold">Ruby</div>
+                <div class="card fw-bold">RoR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Shortly pt-2">
+        <div class="card haha d-flex flex-wrap flex-row p-4 gap-3">
+          <div class="logo"><img src="images/shortly.svg" alt="Shortly logo"></div>
+          <div class="header flex-fill">
+            <div class="titleg flex-row d-flex gap-3">
+              <div class="title align-items-center">
+                <h1 class="fw-bold fs-5">Shortly</h1>
+              </div>
+            </div>
+            <div class="detail d-flex flex-md-row flex-column justify-content-between">
+              <div class="content">
+                <h1 class="fw-bold fs-4">Junior Developer</h1>
+                <div class="dates d-flex flex-row gap-3">
+                  <div class="day">2w ago</div>
+                  <div class=".">•</div>
+                  <div class="employment">Full Time</div>
+                  <div class=".">•</div>
+                  <div class="Location">Worldwide</div>
+                </div>
+              </div>
+              <hr class="d-md-none my-3 w-100">
+              <div class="tag d-flex flex-md-row flex-wrap align-items-center gap-2">
+                <div class="card fw-bold">Frontend</div>
+                <div class="card fw-bold">Junior</div>
+                <div class="card fw-bold">HTML</div>
+                <div class="card fw-bold">Sass</div>
+                <div class="card fw-bold">JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/nguyencutee/Job-web-Frontend">Ton That Cam Nguyen</a>.
+  </div>
+</body>
+
+</html>
